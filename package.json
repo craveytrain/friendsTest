@@ -8,7 +8,7 @@
   },
   "scripts": {
     "test": "node ./node_modules/.bin/mocha",
-    "coverage": "node ./node_modules/.bin/mocha -r blanket -R html-cov > coverage.html",
+    "coverage": "mkdir coverage && node ./node_modules/.bin/mocha -r blanket -R html-cov > coverage/index.html",
     "analysis": "node node_modules/.bin/plato -r -d report -l .jshintrc lib"
   },
   "author": "Mike Cravey <techie@craveytrain.com>",

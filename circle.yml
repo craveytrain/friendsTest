@@ -2,3 +2,7 @@ test:
     post:
         - npm run coverage
         - npm run analysis
+general:
+    artifacts:
+        - "coverage" # Coverage report
+        - "report" # Static analysis

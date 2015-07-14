@@ -1,6 +1,6 @@
 test:
     override:
-        - node ./node_modules/.bin/mocha -R xunit > $CIRCLE_TEST_REPORTS/testResults.xml
+        - mkdir -p $CIRCLE_TEST_REPORTS/mocha && node ./node_modules/.bin/mocha -R xunit > $CIRCLE_TEST_REPORTS/mocha/testResults.xml
         - npm run coverage
         - npm run analysis
 general:

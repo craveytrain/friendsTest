@@ -1,0 +1,5 @@
+.git*
+docs/
+coverage/
+dest/
+.DS_Store

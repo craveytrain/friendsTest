@@ -1,0 +1,22 @@
+{
+	"bitwise": true,
+	"curly": false,
+	"eqeqeq": true,
+	"esnext": true,
+	"forin": true,
+	"immed": true,
+	"newcap": true,
+	"noarg": true,
+	"quotmark": true,
+	"trailing": true,
+	"undef": true,
+	"unused": true,
+	"maxcomplexity": 10,
+
+	"boss": true,
+	"eqnull": true,
+	"sub": true,
+
+	"node": true,
+	"mocha": true
+}

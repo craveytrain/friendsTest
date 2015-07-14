@@ -1,0 +1,31 @@
+{
+  "name": "friendTest",
+  "version": "0.0.0",
+  "description": "How many friends stayed with me?",
+  "private": true,
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "node ./node_modules/.bin/mocha",
+    "coverage": "node ./node_modules/.bin/mocha -r blanket -R html-cov > coverage.html",
+    "analysis": "node node_modules/.bin/plato -r -d report -l .jshintrc lib"
+  },
+  "author": "Mike Cravey <techie@craveytrain.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "blanket": "^1.1.7",
+    "chai": "^3.0.0",
+    "mocha": "^2.2.5",
+    "plato": "^1.5.0"
+  },
+  "dependencies": {
+    "plur": "^2.0.0"
+  },
+  "config": {
+    "blanket": {
+      "pattern": "lib",
+      "data-cover-never": "node_modules"
+    }
+  }
+}

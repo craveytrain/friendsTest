@@ -1,0 +1,4 @@
+test:
+    post:
+        - npm run coverage
+        - npm run analysis

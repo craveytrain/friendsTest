@@ -1,5 +1,6 @@
 test:
-    post:
+    override:
+        - node ./node_modules/.bin/mocha -R xunit > $CIRCLE_TEST_REPORTS/testResults.xml
         - npm run coverage
         - npm run analysis
 general:
